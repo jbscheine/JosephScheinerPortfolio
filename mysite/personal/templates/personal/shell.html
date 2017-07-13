@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Script Tutorials" />
+		<title>Joseph Scheiner Portforlio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<!-- attach CSS styles -->
+		{% load staticfiles %}
+		<link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type="text/css" />
+		<link rel="stylesheet" href="{% static 'personal/css/style.css' %}" type="text/css" />
+	</head>
+
+	<body>
+
+		<!--  BODY PAGE CONTENT -->
+		<!-- attach JavaScripts -->
+		
+		<script src="{% static 'personal/js/jquery-3.2.1.js' %}"></script>
+		<script src="{% static 'personal/js/bootstrap.min.js' %}"></script>
+		<script src="{% static 'personal/js/main.js' %}"></script>
+		
+		<!-- navigation panel -->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Joseph Scheiner</a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-collapse-main">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#testimonials">Testimonials</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		
+		{% block index %}
+		{% endblock index%}
+	
+		<footer>
+			<hr />
+			<div class="container">
+				<p class="text-right">Created by Joseph Scheiner &copy; 2017</p>
+			</div>
+		</footer>
+	
+	</body>
+
+</html>

@@ -1,0 +1,25 @@
+{% load staticfiles %}
+
+{% block index %} 
+
+<!-- second section - About -->
+<div id="about" class="pad-section">
+	<h2 class="text-center">About</h2> <hr />
+	<div class="container">
+		<div class="row">
+			<div id = "myface" class="col-sm-6">
+				<img src="{% static 'personal/img/myface.png' %}" class="img-circle" alt="" />
+			</div>
+			<div class="col-sm-6 text-Left">
+				<p class="lead">My name is Joseph Scheiner and for the past two and a half years I have been working as a business systems analyst and QA team lead during which time I worked on a B2B2C platform that connected over 30 operators with 10 game providers. This allowed me to work closely between clients and project teams giving me the skills and experience needed to successfully manage and analyze product implementations from start to finish. In addition, I worked for Cognizant for 2 years prior where I was an onsite QA lead executing the software testing life cycle to complete a multitude of projects.
+				<br />
+				<br />
+				I am interested in looking for the opportunities that complement my skills detailed above. If you are interested in learning more then please navigate to the <a href="#contact">contact</a> section.</p>
+			
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /second section -->
+
+{% endblock index%}
